@@ -10,7 +10,7 @@ public class Browser {
     public static WebDriverWait wait;
 
     public static WebDriver initializeDriver() {
-        System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./src/main/resources/driver/chromedriver.exe");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, defaultWaitTime);
         return driver;
