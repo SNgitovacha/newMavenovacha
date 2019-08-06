@@ -13,7 +13,7 @@ public class LoginTest extends Browser {
     @BeforeClass
     public void beforeClass(){
         Browser.initializeDriver();
-        Browser.openUrl("https://saucedemo.com");
+        Browser.openUrl("https://www.saucedemo.com");
         homePage = new HomePage(Browser.driver, Browser.wait);
     }
 
