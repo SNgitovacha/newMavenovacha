@@ -5,9 +5,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Browser {
-    static WebDriver driver;
-    static int defaultWaitTime = 10;
-    static WebDriverWait wait;
+    public static WebDriver driver;
+    public static int defaultWaitTime = 10;
+    public static WebDriverWait wait;
 
     public static WebDriver initializeDriver() {
         System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
@@ -16,12 +16,12 @@ public class Browser {
         return driver;
     }
 
-    public void openUrl(String URL){
+    public static void openUrl(String URL){
         driver.manage().window().maximize();
         driver.get(URL);
     }
 
-    public void closeBrowser(){
+    public static void closeBrowser(){
         driver.quit();
     }
 }
